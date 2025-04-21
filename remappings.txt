@@ -1,0 +1,3 @@
+@openzeppelin=openzeppelin-contracts/
+@solmate=solmate/
+@forge-std/=forge-std/src/

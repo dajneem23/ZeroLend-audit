@@ -1,0 +1,26 @@
+[profile.default]
+solc-version = "0.8.20"
+src = "contracts"
+out = "out"
+libs = ["lib"]
+cache = true
+cache_path = 'cache'
+optimizer = true
+optimize = true
+optimize_runs = 200
+
+[profile.hardhat]
+src = "contracts"
+out = "artifacts"
+libs = ["node_modules"]
+
+[profile.zksync]
+libs = ['lib']
+fallback_oz = true
+mode = "3"
+match_test="test/zksync/**.sol"
+no_match_test="test/**.sol"
+
+[rpc_endpoints]
+zksync = "${ZKSYNCSEPOLIA_RPC_URL}"
+
